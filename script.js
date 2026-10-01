@@ -294,6 +294,8 @@ var SKILLS = [
     match: { cats: ['hardware'], tech: ['c', 'c++'] } },
   { name: 'AI & Computer Vision', items: 'TensorFlow, YOLOv8, TensorFlow Lite, AI agents', color: '#dc148c', icon: '◎',
     match: { cats: ['ai'] } },
+  { name: 'AI Dev Tools', items: 'Claude, Claude Code, OpenCode, Cursor', color: '#d97757', icon: '✦',
+    match: { tech: ['claude', 'claude code', 'opencode', 'cursor'] } },
   { name: 'Game Dev', items: 'Godot, Unity C#, Nakama', color: '#e8115b', icon: '▶',
     match: { cats: ['game'] } },
   { name: 'Cloud & DevOps', items: 'Microsoft Azure, Cloudflare (DNS, SSL, CDN), Linux server admin (Ubuntu), VPS hosting (Hostinger, DigitalOcean), Vercel, Netlify, NextCloud', color: '#0d73ec', icon: '☁',
