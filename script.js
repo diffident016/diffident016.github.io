@@ -28,6 +28,13 @@ var PROJECTS = [
     repos: [['app', 'M-P-Technologies/coco-app', true]]
   },
   {
+    title: 'Coop Feud: Live Event Game System',
+    desc: 'Two-screen survey game for live events: an operator console drives a read-only audience board on a projector, synced across windows with BroadcastChannel and packaged as a desktop app with Tauri.',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Zustand', 'Tauri'],
+    year: 2026, cats: ['web', 'game'], art: 'sw-game', grad: 'g5', org: 'MvP Technologies',
+    repos: [['app', 'M-P-Technologies/family-feud', true]]
+  },
+  {
     title: 'SWEEP CDO Decision Support System',
     desc: 'Decision support system with a Leaflet GIS map for site selection, backend endpoints serving ML models, and NextCloud document storage.',
     tech: ['Next.js', 'TypeScript', 'Python Flask', 'Leaflet', 'NextCloud'],
