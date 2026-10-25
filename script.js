@@ -13,28 +13,6 @@ var GH = 'https://github.com/diffident016/';
    repos: [label, 'repo' | 'owner/repo', private?]. Private repos show a lock instead of a link. */
 var PROJECTS = [
   {
-    title: 'Clawholics: Salon Booking System',
-    desc: 'Nail salon appointment system with Xendit downpayments, QR-scanned loyalty stamps, birthday vouchers, a staff dashboard with new-booking alerts, and an admin CMS. Migrated live data from Cloudflare D1 to Supabase Postgres.',
-    tech: ['Next.js', 'TypeScript', 'Clerk', 'Supabase', 'PostgreSQL', 'Xendit', 'Cloudflare R2', 'Resend', 'Vitest'],
-    year: 2026, cats: ['web'], art: 'sw-web', grad: 'g8', featured: true, org: 'MvP Technologies',
-    demo: 'https://clawholicsbymax.com',
-    repos: [['web', 'M-P-Technologies/clawholics-web']]
-  },
-  {
-    title: 'COCO: Cooperative Management System',
-    desc: 'Flutter Web PWA with admin, officer and member roles: member registry with approval and membership-fee gates, ledger and accounting actions, statutory fund allocation, and inventory. PocketBase backend served behind Caddy.',
-    tech: ['Flutter', 'Dart', 'Riverpod', 'PocketBase', 'Caddy'],
-    year: 2026, cats: ['web', 'mobile'], art: 'sw-mobile', grad: 'g3', org: 'MvP Technologies',
-    repos: [['app', 'M-P-Technologies/coco-app', true]]
-  },
-  {
-    title: 'Coop Feud: Live Event Game System',
-    desc: 'Two-screen survey game for live events: an operator console drives a read-only audience board on a projector, synced across windows with BroadcastChannel and packaged as a desktop app with Tauri.',
-    tech: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Zustand', 'Tauri'],
-    year: 2026, cats: ['web', 'game'], art: 'sw-game', grad: 'g5', org: 'MvP Technologies',
-    repos: [['app', 'M-P-Technologies/family-feud', true]]
-  },
-  {
     title: 'SWEEP CDO Decision Support System',
     desc: 'Decision support system with a Leaflet GIS map for site selection, backend endpoints serving ML models, and NextCloud document storage.',
     tech: ['Next.js', 'TypeScript', 'Python Flask', 'Leaflet', 'NextCloud'],
@@ -73,6 +51,28 @@ var PROJECTS = [
     tech: ['Godot', 'Nakama', 'TypeScript'],
     year: 2024, cats: ['game'], art: 'sw-game', grad: 'g4', featured: true,
     repos: [['server', 'storyteller-app-nakama']]
+  },
+  {
+    title: 'Clawholics: Salon Booking System',
+    desc: 'Nail salon appointment system with Xendit downpayments, QR-scanned loyalty stamps, birthday vouchers, a staff dashboard with new-booking alerts, and an admin CMS. Migrated live data from Cloudflare D1 to Supabase Postgres.',
+    tech: ['Next.js', 'TypeScript', 'Clerk', 'Supabase', 'PostgreSQL', 'Xendit', 'Cloudflare R2', 'Resend', 'Vitest'],
+    year: 2026, cats: ['web'], art: 'sw-web', grad: 'g8', org: 'MvP Technologies',
+    demo: 'https://clawholicsbymax.com',
+    repos: [['web', 'M-P-Technologies/clawholics-web']]
+  },
+  {
+    title: 'COCO: Cooperative Management System',
+    desc: 'Flutter Web PWA with admin, officer and member roles: member registry with approval and membership-fee gates, ledger and accounting actions, statutory fund allocation, and inventory. PocketBase backend served behind Caddy.',
+    tech: ['Flutter', 'Dart', 'Riverpod', 'PocketBase', 'Caddy'],
+    year: 2026, cats: ['web', 'mobile'], art: 'sw-mobile', grad: 'g3', org: 'MvP Technologies',
+    repos: [['app', 'M-P-Technologies/coco-app', true]]
+  },
+  {
+    title: 'Coop Feud: Live Event Game System',
+    desc: 'Two-screen survey game for live events: an operator console drives a read-only audience board on a projector, synced across windows with BroadcastChannel and packaged as a desktop app with Tauri.',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Zustand', 'Tauri'],
+    year: 2026, cats: ['web', 'game'], art: 'sw-game', grad: 'g5', org: 'MvP Technologies',
+    repos: [['app', 'M-P-Technologies/family-feud', true]]
   },
   {
     title: 'Flood Monitoring',
