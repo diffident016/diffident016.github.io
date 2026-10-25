@@ -13,6 +13,21 @@ var GH = 'https://github.com/diffident016/';
    repos: [label, 'repo' | 'owner/repo', private?]. Private repos show a lock instead of a link. */
 var PROJECTS = [
   {
+    title: 'Clawholics: Salon Booking System',
+    desc: 'Nail salon appointment system with Xendit downpayments, QR-scanned loyalty stamps, birthday vouchers, a staff dashboard with new-booking alerts, and an admin CMS. Migrated live data from Cloudflare D1 to Supabase Postgres.',
+    tech: ['Next.js', 'TypeScript', 'Clerk', 'Supabase', 'PostgreSQL', 'Xendit', 'Cloudflare R2', 'Resend', 'Vitest'],
+    year: 2026, cats: ['web'], art: 'sw-web', grad: 'g8', featured: true, org: 'MvP Technologies',
+    demo: 'https://clawholicsbymax.com',
+    repos: [['web', 'M-P-Technologies/clawholics-web']]
+  },
+  {
+    title: 'COCO: Cooperative Management System',
+    desc: 'Flutter Web PWA with admin, officer and member roles: member registry with approval and membership-fee gates, ledger and accounting actions, statutory fund allocation, and inventory. PocketBase backend served behind Caddy.',
+    tech: ['Flutter', 'Dart', 'Riverpod', 'PocketBase', 'Caddy'],
+    year: 2026, cats: ['web', 'mobile'], art: 'sw-mobile', grad: 'g3', org: 'MvP Technologies',
+    repos: [['app', 'M-P-Technologies/coco-app', true]]
+  },
+  {
     title: 'SWEEP CDO Decision Support System',
     desc: 'Decision support system with a Leaflet GIS map for site selection, backend endpoints serving ML models, and NextCloud document storage.',
     tech: ['Next.js', 'TypeScript', 'Python Flask', 'Leaflet', 'NextCloud'],
@@ -31,12 +46,12 @@ var PROJECTS = [
   },
   {
     title: 'HRMO Payroll System',
-    desc: 'Manages employees, departments and DTR records, and computes salaries automatically, with a Python biometrics service and a Flask API. Deployed on a DigitalOcean droplet.',
-    tech: ['Next.js', 'Prisma', 'MongoDB', 'Python', 'Flask', 'VPS'],
+    desc: 'Production payroll and HR system for a municipal HR office: employees, departments, DTR, leave ledgers and requests, and automatic salary computation. Biometric devices sync attendance through a Python service; employees get a mobile-first portal with push notifications, and an admin-only MCP server gives AI assistants access to payroll data.',
+    tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Python', 'Docker', 'MCP'],
     year: 2025, cats: ['web'], art: 'sw-web', grad: 'g1', featured: true, org: 'HR-Payroll',
     demo: 'https://hrmo-payroll-web.vercel.app',
     shots: ['assets/shots/hrmo-payroll-system.jpg'],
-    repos: [['web', 'hrmo-payroll-web'], ['biometrics', 'HR-Payroll/hrmo-payroll-biometrics'], ['api', 'HR-Payroll/hrmo-payroll-api', true]]
+    repos: [['web', 'hrmo-payroll-web'], ['production web', 'HR-Payroll/hrmo-payroll-web', true], ['biometrics', 'HR-Payroll/hrmo-payroll-biometrics'], ['api', 'HR-Payroll/hrmo-payroll-api', true]]
   },
   {
     title: 'Smart Solid Waste Collector',
@@ -287,7 +302,7 @@ var SKILLS = [
   { name: 'Frontend', items: 'Next.js 15, React, Nuxt 3, Vue, TypeScript, JavaScript, HTML, CSS, Tailwind CSS', color: '#e13300', icon: '</>',
     match: { tech: ['next.js', 'react', 'nuxt 3', 'vue', 'typescript', 'javascript', 'css', 'tailwind', 'gatsby', 'vite', 'mui', 'apexcharts', 'leaflet'] } },
   { name: 'Backend', items: 'Node.js, Laravel, Python, Flask, Prisma, PostgreSQL, MongoDB, Firebase', color: '#1e3264', icon: '{}',
-    match: { tech: ['node.js', 'express', 'python', 'flask', 'python flask', 'prisma', 'mongodb', 'firebase', 'strapi', 'nextcloud', 'postgresql'] } },
+    match: { tech: ['node.js', 'express', 'python', 'flask', 'python flask', 'prisma', 'mongodb', 'firebase', 'strapi', 'nextcloud', 'postgresql', 'supabase', 'pocketbase'] } },
   { name: 'Mobile', items: 'Flutter, Dart, Firebase, Java', color: '#8400e7', icon: '▯',
     match: { cats: ['mobile'] } },
   { name: 'Hardware & Embedded', items: 'Arduino, ESP32, Raspberry Pi, sensors, C / C++ firmware', color: '#148a08', icon: '⚡',
@@ -299,7 +314,7 @@ var SKILLS = [
   { name: 'Game Dev', items: 'Godot, Unity C#, Nakama', color: '#e8115b', icon: '▶',
     match: { cats: ['game'] } },
   { name: 'Cloud & DevOps', items: 'Microsoft Azure, Cloudflare (DNS, SSL, CDN), Linux server admin (Ubuntu), VPS hosting (Hostinger, DigitalOcean), Vercel, Netlify, NextCloud', color: '#0d73ec', icon: '☁',
-    match: { tech: ['vps', 'nextcloud'], hosts: ['vercel.app', 'netlify.app'] } },
+    match: { tech: ['vps', 'nextcloud', 'docker', 'caddy', 'cloudflare r2'], hosts: ['vercel.app', 'netlify.app'] } },
   { name: 'Networking', items: 'Routing, Switching, Wireless LAN, Network Security, Cisco Packet Tracer', color: '#477d95', icon: '⇄',
     match: { tech: ['ccna', 'routing', 'switching', 'enterprise networking', 'network fundamentals'] } }
 ];
